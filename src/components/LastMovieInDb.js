@@ -1,7 +1,24 @@
 import React from 'react';
+import {useState, useEffect} from 'react';
 
 
 function LastMovieInDb(){
+    const [product,setProduct] = useState([]);
+    useEffect(()=>{
+        fetch("api/productos")
+        .then(response=>
+            response.json()
+        ).then(data => {
+            
+                setProduct(data)
+                console.log(data)
+                
+            
+        })
+        .catch(error => console.log(error))
+    },[])
+
+
     return(
         <div className="col-lg-6 mb-4">
             <div className="card shadow mb-4">

@@ -7,8 +7,8 @@ function ChartRow(props){
                     <td>{props.id}</td>
                     <td>{props.name}</td>                    
                     <td>{props.category}</td>
-                    <td>{props.dues}</td>
-                    <td>{props.stock}</td>
+                    <td>{props.description}</td>
+                  
                 </tr>
             )
     }
