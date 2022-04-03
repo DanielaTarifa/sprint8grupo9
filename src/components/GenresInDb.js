@@ -2,12 +2,12 @@ import React from "react";
 import {useState, useEffect} from 'react';
 
 function GenresInDb() {
-  const [categories,setCategory] = useState([]);
+  const [categories,setCategories] = useState([]);
   useEffect(()=>{
       fetch("api/productos")
       .then(response=>response.json()
       ).then(data => {
-              setCategory(data.countByCategory)
+              setCategories(data.countByCategory)
               
           
       })
