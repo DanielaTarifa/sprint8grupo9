@@ -47,3 +47,4 @@ function GenresInDb() {
   );
 
 }
+export default GenresInDb;
