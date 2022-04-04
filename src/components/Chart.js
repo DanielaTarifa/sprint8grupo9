@@ -34,6 +34,7 @@ function Chart(){
                                 <th>Nombre</th>                                
                                 <th>Categoría</th>
                                 <th>Detalle</th>
+                                <th> Ver Más</th>
                                 
                             </tr>
                         </thead>
