@@ -2,6 +2,7 @@ import React from 'react';
 import {useState, useEffect} from 'react';
 
 
+
 function LastMovieInDb(){
     const [product,setProduct] = useState([]);
     useEffect(()=>{
@@ -12,6 +13,7 @@ function LastMovieInDb(){
             
                 setProduct(data.ultimoproduct)
                 console.log(data.ultimoproduct)
+                console.log(data.img)
                 
             
         })
@@ -28,9 +30,11 @@ function LastMovieInDb(){
                 <div className="card-body">
     
                     <div className="text-center">
-                        <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: 40 +'rem'}} alt="producto"/>
+                        <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: 40 +'rem'}}  src={product.img}alt="producto"/>
                     </div>
                     <p>{product.description}</p>
+                    <p>Stock: {product.stock}</p>
+                    <p>Precio:$ {product.price}</p>
                     <a className="btn btn-danger" target="_blank" rel="nofollow" href="/">Ver detalle</a>
                 </div>
             </div>

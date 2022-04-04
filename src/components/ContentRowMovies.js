@@ -21,7 +21,7 @@ useEffect(()=>{
 
 let moviesInDB = {
     title: 'Total de productos',
-    color: 'susses', 
+    color: 'warning', 
     cuantity: category,
     icon: "fas fa-desktop"
 }
@@ -42,7 +42,7 @@ useEffect(()=>{
 
 let totalAwards = {
     title:'Total de Categorías', 
-    color:'success', 
+    color:'warning', 
     cuantity: categories,
     icon:'fas fa-bookmark'
 }
@@ -55,8 +55,7 @@ useEffect(()=>{
     ).then(data => {
             setUsers(data.count)
             
-            
-        
+
     })
     .catch(error => console.log(error))
 },[])
