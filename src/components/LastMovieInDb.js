@@ -33,9 +33,8 @@ function LastMovieInDb(){
                         <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: 40 +'rem'}}  src={product.imagen}alt="producto"/>
                     </div>
                     <p>{product.description}</p>
-                    <p>Stock: {product.stock}</p>
-                    <p>Precio:$ {product.price}</p>
-                    <a className="btn btn-danger" target="_blank" rel="nofollow" href="/">Ver detalle</a>
+                
+                    <a className="btn btn-danger" target="_blank" rel="nofollow" href = {product.detail}>Ver detalle</a>
                 </div>
             </div>
         </div>
