@@ -2,12 +2,12 @@ import React from "react";
 import {useState, useEffect} from 'react';
 
 function GenresInDb() {
-  const [categories,setCategory] = useState([]);
+  const [categories,setCategories] = useState([]);
   useEffect(()=>{
       fetch("api/productos")
       .then(response=>response.json()
       ).then(data => {
-              setCategory(data.countByCategory)
+              setCategories(data.countByCategory)
               
           
       })
@@ -30,7 +30,7 @@ function GenresInDb() {
                 return(
                   <div className="col-lg-6 mb-4" key={i}>
                   <div className="card bg-dark text-white shadow">
-                    <div className="card-body">{category.name} {category.amount}</div>
+                    <div className="card-body">{category.name}<br></br> {category.count}</div>
                   </div>
                 </div>
                 )

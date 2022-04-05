@@ -7,8 +7,9 @@ function ChartRow(props){
                     <td>{props.id}</td>
                     <td>{props.name}</td>                    
                     <td>{props.category}</td>
-                    <td>{props.dues}</td>
-                    <td>{props.stock}</td>
+                    <td>{props.description}</td>
+                    <td ><a className="btn btn-danger" target="_blank" rel="nofollow" href = {props.detail}>Detalle</a></td>
+                  
                 </tr>
             )
     }

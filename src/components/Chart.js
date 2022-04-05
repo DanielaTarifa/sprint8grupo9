@@ -33,8 +33,9 @@ function Chart(){
                                 <th>ID</th>
                                 <th>Nombre</th>                                
                                 <th>Categoría</th>
-                                <th>Price</th>
-                                <th>Stock</th>
+                                <th>Detalle</th>
+                                <th> Ver Más</th>
+                                
                             </tr>
                         </thead>
                         <tfoot>
